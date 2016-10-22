@@ -13,7 +13,7 @@ body {
     max-width:100%;
 }
 @keyframes carousel{
-    0%    { left:0; }
+/*    0%    { left:0; }
     14.6%   { left:0; }
     16.6% { left:-100%; }
     31.2% { left:-100%; }
@@ -25,6 +25,15 @@ body {
     81.2%   { left:-200%; }
     83.2% { left:-100%; }
     97.8% { left:-100%; }
+    100%   { left:0%; }*/
+    0%    { left:0; }
+    25%   { left:0; }
+    27% { left:-100%; }
+    50% { left:-100%; }
+    52%   { left:-200%; }
+    75%   { left:-200%; }
+    77% { left:-300%; }
+    98% { left:-300%; }
     100%   { left:0%; }
 }
 .panes{
@@ -43,4 +52,11 @@ body {
     float:left;
     width:25%; /* 100 / number of panes */
 }
-
+#landingpg {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
