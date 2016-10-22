@@ -1,1 +1,46 @@
 /* CSS declarations go here */
+body {
+	margin: 0;
+	padding: 0;
+}
+.carousel{
+    overflow:hidden;
+    width:100%;
+}
+.carousel img{
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+@keyframes carousel{
+    0%    { left:0; }
+    14.6%   { left:0; }
+    16.6% { left:-100%; }
+    31.2% { left:-100%; }
+    33.2%   { left:-200%; }
+    47.8%   { left:-200%; }
+    50% { left:-300%; }
+    64.6% { left:-300%; }
+    66.6%   { left:-200%; }
+    81.2%   { left:-200%; }
+    83.2% { left:-100%; }
+    97.8% { left:-100%; }
+    100%   { left:0%; }
+}
+.panes{
+    list-style:none;
+    position:relative;
+    width:400%; /* Number of panes * 100% */
+    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
+    -moz-animation:carousel 20s infinite;
+    -webkit-animation:carousel 20s infinite;
+    animation:carousel 20s infinite;
+    margin:0;
+    padding:0;
+}
+.panes > li{
+    position:relative;
+    float:left;
+    width:25%; /* 100 / number of panes */
+}
+
