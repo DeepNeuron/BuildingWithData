@@ -3,7 +3,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+/*LANDING PAGE*/
 body {
 	margin: 0;
 	padding: 0;
@@ -64,18 +66,45 @@ body {
    order: 1;
    align-self: flex-end;
 }
-/*div #jumbo1 {
-	padding: 65px 75px 65px 75px;
-	margin: 0;
-	background: linear-gradient(#fff, #383d38);	
-	color: #2b302b;
-	font-family: "Open Sans", sans-serif, Calibri, sans-serif, Microsoft Yahei;
+
+/*SIMULATIONS PAGE*/
+#simpagetop {
+	background-color: #3F3F3F;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
 }
-div #jumbo1 h1 {
-	margin: 0;
-	padding: 0px 0px 20px 0px;
+#simpagetop h4 {
+	color: #FCFCFC;
+	padding: 12px 20px 0px 20px;
+	font-family: "Montserrat";
 }
-div #jumbo1 h4 {
+hr {
+	color: #FCFCFC;
+	background-color: #3F3F3F;
+	margin:0;
+	padding-bottom: 20px;
+	order:3;
+}
+#simpagetop #sptfirst {
+   order: 1;
+   align-self: flex-start;
+   font-family: "Montserrat";
+}
+#simpagetop #sptsecond {
+	order: 2;
+   align-self: flex-end;
+   font-family: "Montserrat";
+}
+#simpagetomorrow {
+	background-color: #3F3F3F;
+}
+#simpagetomorrow h2 {
+	color: #FCFCFC;
 	margin: 0;
-	padding: 0px 0px 20px 20px;
-}*/
+	padding-left: 20px;
+	font-family: "Montserrat";
+}
