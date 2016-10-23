@@ -1,73 +1,15 @@
 /* CSS declarations go here */
 /*https://css-tricks.com/examples/GradientBorder/*/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /*LANDING PAGE*/
-body {
-	margin: 0;
-	padding: 0;
-}
-.carousel{
-    overflow:hidden;
-    width:100%;
-    order: 1;
-    align-self: flex-start;
-}
-.carousel img{
-    display:block;
-    width:100%;
-    min-height:100%;
-    max-width:100%;
-}
-/*Need to be at least 1000px*/
-@keyframes carousel{
-    0%    { left:0; }
-    25%   { left:0; }
-    27% { left:-100%; }
-    50% { left:-100%; }
-    52%   { left:-200%; }
-    75%   { left:-200%; }
-    77% { left:-300%; }
-    98% { left:-300%; }
-    100%   { left:0%; }
-}
-.panes{
-    list-style:none;
-    position:relative;
-    width:400%; /* Number of panes * 100% */
-    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
-    -moz-animation: carousel 30s infinite;
-    -webkit-animation: carousel 30s infinite;
-    animation: carousel 30s infinite;
-    margin:0;
-    padding:0;
-}
-.panes > li{
-    position:relative;
-    float:left;
-    width:25%; /* 100 / number of panes */
-}
-#landingpg {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-}
-#break {
-	margin: 0;
-	padding: 25px 0px 35px 20px;
-	background-color: #FAFAFA;
-	font-family: "Roboto";
-   order: 1;
-   align-self: flex-end;
-}
 
 /*SIMULATIONS PAGE*/
+body {
+	background-color: #3F3F3F;
+}
 #simpagetop {
 	background-color: #3F3F3F;
 	display: flex;
@@ -79,8 +21,8 @@ body {
 }
 #simpagetop h4 {
 	color: #FCFCFC;
-	padding: 12px 20px 0px 20px;
-	font-family: "Montserrat";
+	padding: 12px 20px 12px 20px;
+	font-family: "Source Sans Pro";
 }
 hr {
 	color: #FCFCFC;
@@ -92,19 +34,42 @@ hr {
 #simpagetop #sptfirst {
    order: 1;
    align-self: flex-start;
-   font-family: "Montserrat";
+   font-family: "Source Sans Pro";
 }
 #simpagetop #sptsecond {
 	order: 2;
    align-self: flex-end;
-   font-family: "Montserrat";
+   font-family: "Source Sans Pro";
 }
 #simpagetomorrow {
 	background-color: #3F3F3F;
 }
-#simpagetomorrow h2 {
+#simpagetomorrow, #simpagetoday, #simpagehistory {
 	color: #FCFCFC;
-	margin: 0;
+	margin: 0 0 0 0;
 	padding-left: 20px;
-	font-family: "Montserrat";
+	font-family: "Source Sans Pro";
+	background-color: #3F3F3F;
+}
+#tomorrowinfo, #todayinfo {
+	color: #FCFCFC;
+	margin: 0 150px 0 150px;
+	padding: 0px 40px 0px 20px;
+	font-family: "Source Sans Pro";
+	background-color: #3F3F3F;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+#tomorrowinfo div {
+	align-self: flex-start;
+}
+#todayinfo div {
+	align-self: flex-start;
+}
+#largeo, #larget {
+	font-size: 350%;
 }
