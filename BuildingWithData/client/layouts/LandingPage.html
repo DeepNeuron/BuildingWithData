@@ -12,6 +12,7 @@
 	        
 	        .nav {
 	            padding-top: 10px;
+	            padding-bottom: 10px;
 	        }
 	        
 	        .nav a {
@@ -27,27 +28,33 @@
 	        #landing-image {
 	            background-image: url("http://www.krux.com/static/img/bg-blue-wrap-data-grid.png");
 	            background-repeat: no-repeat;
-	            background-size: auto 500px;
-	            height: 500px;
+	            background-size: auto 565px;
+	            height: 565px;
 	        }
 	        
 	        #title {
 	            margin-top: 150px;
 	            margin-left: 700px;
 	            display: inline-block;
+	            transition: color 0.8s ease-out
+	        }
+
+	        #title:hover, h2:hover, h4:hover {
+	        	color: #2A9FD7;
+	        	transition: color 0.8s ease-out;
 	        }
 	        
 	        #purpose {
 	            background-color: #F9F9F9;
-	            height:250px;
+	            height:400px;
 	            background-image: url("/./landingchart.png");
-	            background-size: 20%;
+	            background-size: 30%;
 	            background-repeat: no-repeat;
 	            background-position: right bottom;
 	        }
 	        
 	        #buildwithdata{
-	            height:250px;
+	            height:400px;
 	        }
 	        #footer {
 	            background-color: #F9F9F9;
@@ -71,26 +78,26 @@
 	    
 	    <div class="container-fluid" id="landing-image">
 	        <div id="title">
-    	        <h1>Building with Data</h1>
-    	        <h5>Singapore</h5>
+    	        <h1 style="display:inline">Building with Data</h1>
+    	        <h5 style="display: inline">Singapore</h5>
 	        </div>
 	    </div>
 	    
 	    <div class="container-fluid text-center" id="purpose">
 	        <div style="width:70%; margin:auto; padding: 20px;">
-	        <h3>Purpose</h3>
-	        <br>
-	        <p>How can we better manage our resources? How can we build an environmental and health conscious future?</p><br>
-	        <p>Singapore imports all electricity from Malaysia. Mismatches in demand forecast and supply can cause significant, unnecessary losses to Singaporean businesses and residents. How can we fix this?</p>
+	        <h2>Purpose</h2>
+	        <br><br>
+	        <h4>How can we better manage our resources? How can we build an environmental and health conscious future?</h4><br><br>
+	        <h4>Singapore imports all electricity from Malaysia. Mismatches in demand forecast and supply can cause significant, unnecessary losses to Singaporean businesses and residents. How can we fix this?</h4>
 	        </div>
 	    </div>
 	    
 	    <div class="container-fluid text-center" id="buildwithdata">
 	        <div style="width:70%; margin:auto; padding: 20px;">
-	        <h3>BuildWithData</h3>
-	        <br>
-	        <p>Our software aims to provide accurate short and long term forecasts on energy use in Singapore. We use a wide range of data to model energy use of businesses, buildings, and infrastructure.</p><br>
-	        <p>Location information, weather data, business type, building age, etc.</p>
+	        <h2>BuildWithData</h2>
+	        <br><br>
+	        <h4>Our software aims to provide accurate short and long term forecasts on energy use in Singapore. We use a wide range of data to model energy use of businesses, buildings, and infrastructure.</h4><br><br>
+	        <h4>Location information, weather data, business type, building age, etc.</h4>
 	        </div>
 	    </div>
 	    
