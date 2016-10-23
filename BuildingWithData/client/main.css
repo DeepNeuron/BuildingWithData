@@ -1,6 +1,8 @@
 /* CSS declarations go here */
+/*https://css-tricks.com/examples/GradientBorder/*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
 	margin: 0;
@@ -15,22 +17,11 @@ body {
 .carousel img{
     display:block;
     width:100%;
+    min-height:100%;
     max-width:100%;
 }
+/*Need to be at least 1000px*/
 @keyframes carousel{
-/*    0%    { left:0; }
-    14.6%   { left:0; }
-    16.6% { left:-100%; }
-    31.2% { left:-100%; }
-    33.2%   { left:-200%; }
-    47.8%   { left:-200%; }
-    50% { left:-300%; }
-    64.6% { left:-300%; }
-    66.6%   { left:-200%; }
-    81.2%   { left:-200%; }
-    83.2% { left:-100%; }
-    97.8% { left:-100%; }
-    100%   { left:0%; }*/
     0%    { left:0; }
     25%   { left:0; }
     27% { left:-100%; }
@@ -46,9 +37,9 @@ body {
     position:relative;
     width:400%; /* Number of panes * 100% */
     overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
-    -moz-animation: carousel 20s infinite;
-    -webkit-animation: carousel 20s infinite;
-    animation: carousel 20s infinite;
+    -moz-animation: carousel 30s infinite;
+    -webkit-animation: carousel 30s infinite;
+    animation: carousel 30s infinite;
     margin:0;
     padding:0;
 }
@@ -65,7 +56,26 @@ body {
 	align-items: flex-start;
 	align-content: flex-start;
 }
-div #jumbo1 {
+#break {
 	margin: 0;
-	padding: 0;
+	padding: 25px 0px 35px 20px;
+	background-color: #FAFAFA;
+	font-family: "Roboto";
+   order: 1;
+   align-self: flex-end;
 }
+/*div #jumbo1 {
+	padding: 65px 75px 65px 75px;
+	margin: 0;
+	background: linear-gradient(#fff, #383d38);	
+	color: #2b302b;
+	font-family: "Open Sans", sans-serif, Calibri, sans-serif, Microsoft Yahei;
+}
+div #jumbo1 h1 {
+	margin: 0;
+	padding: 0px 0px 20px 0px;
+}
+div #jumbo1 h4 {
+	margin: 0;
+	padding: 0px 0px 20px 20px;
+}*/

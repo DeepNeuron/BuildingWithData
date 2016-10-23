@@ -12,7 +12,6 @@ FlowRouter.route('/SimulationsPage', {
     	BlazeLayout.render('SimulationsPage')
     }
 
-
 });
 
 // 	//Add properties to this object
@@ -24,8 +23,7 @@ FlowRouter.route('/SimulationsPage', {
 // 		BlazeLayout.render('LandingPage');
 // 	}
 
-
-// });
+// };
 
 // FlowRouter.route('/EnergyPortal', {
 // 	//Add properties to this object
@@ -36,7 +34,6 @@ FlowRouter.route('/SimulationsPage', {
 // 		//BlazeLayout.render('HomeLayouts', {content:'loanPortfolio', swag:'scheduleTable'});
 // 		BlazeLayout.render('EnergyPortal');
 // 	}
-
 
 // });
 
