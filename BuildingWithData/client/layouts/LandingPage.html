@@ -1,68 +1,102 @@
 <template name ="LandingPage">
+	<head>
+	    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	    <style>
+	        body {
+	            font-family: Hiragino Kaku Gothic Pro;
+	            color: #353535;
+	        }
+	        
+	        .nav {
+	            padding-top: 10px;
+	        }
+	        
+	        .nav a {
+	            color:#353535;
+	 
+	        }
+	        
+	        #right {
+	            padding-right: 15px;
+	            padding-left: 15px;
+	        }
+	        
+	        #landing-image {
+	            background-image: url("http://www.krux.com/static/img/bg-blue-wrap-data-grid.png");
+	            background-repeat: no-repeat;
+	            background-size: auto 500px;
+	            height: 500px;
+	        }
+	        
+	        #title {
+	            margin-top: 150px;
+	            margin-left: 700px;
+	            display: inline-block;
+	        }
+	        
+	        #purpose {
+	            background-color: #F9F9F9;
+	            height:250px;
+	            background-image: url("https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/14713803_10209762225788131_4957516634212435531_n.jpg?oh=48902140692c3bab87bda5028af0a826&oe=58A3AEC9");
+	            background-size: 50%;
+	            background-repeat: no-repeat;
+	            background-position: right bottom;
+	        }
+	        
+	        #buildwithdata{
+	            height:250px;
+	        }
+	        #footer {
+	            background-color: #F9F9F9;
+	            height:100px;
+	        }
 
-<head></head>
 
-<body id=landingpg>
+	    </style>
+	</head>
 
-<!-- https://www.christianheilmann.com/2015/04/08/keeping-it-simple-coding-a-carousel/ -->
-<!-- http://csswizardry.com/2011/10/fully-fluid-responsive-css-carousel/ -->
+	<body>
+	    <div class="container-fluid" id="navbar">
+	        <ul class="nav navbar-nav">
+	            <a href="#" style="font-size:20px">BwD</a>
+	        </ul>
+	        <ul class="nav navbar-nav navbar-right">
+	            <a href="#" id="right">About</a>
+	            <a href="#" id="right">Login</a>
+	        </ul>
+	    </div>
+	    
+	    <div class="container-fluid" id="landing-image">
+	        <div id="title">
+    	        <h1>Building with Data</h1>
+    	        <h5>Singapore</h5>
+	        </div>
+	    </div>
+	    
+	    <div class="container-fluid text-center" id="purpose">
+	        <div style="width:70%; margin:auto; padding: 20px;">
+	        <h3>Purpose</h3>
+	        <br>
+	        <p>How can we better manage our resources? How can we build an environmental and health conscious future?</p><br>
+	        <p>Singapore imports all electricity from Malaysia. Mismatches in demand forecast and supply can cause significant, unnecessary losses to Singaporean businesses and residents. How can we fix this?</p>
+	        </div>
+	    </div>
+	    
+	    <div class="container-fluid text-center" id="buildwithdata">
+	        <div style="width:70%; margin:auto; padding: 20px;">
+	        <h3>BuildWithData</h3>
+	        <br>
+	        <p>Our software aims to provide accurate short and long term forecasts on energy use in Singapore. We use a wide range of data to model energy use of businesses, buildings, and infrastructure.</p><br>
+	        <p>Location information, weather data, business type, building age, etc.</p>
+	        </div>
+	    </div>
+	    
+	    <div class="container-fluid text-center" id="footer">
 
-	<div id=break>
-		<h1>
-			Building With Data
-		</h1>
-		<h2>
-			Simulating energy use in Singapore
-		</h2>
-	</div>
-
-	<div class="carousel">
-		<ul class="panes">
-			<li>
-				<img src="puppies1.png " alt="">
-			</li>
-
-			<li>
-				<img src="puppies3.jpg " alt="">
-			</li>
-
-			<li>
-				<img src="puppies2.jpg " alt="">
-			</li>
-
-			<li>
-				<img src="puppies4.jpg " alt="">
-			</li>
-		</ul>
-	</div>
-
-	<div id=break>
-		<h3>
-			
-		</h3>
-	</div>
-
-
-<!-- 	<div id=jumbo1>
-		<h1>
-			Purpose
-		</h1>
-		<h4>
-			How can we better manage our resources? How can we build an environmental and health conscious future?
-		</h4>
-		<h4>
-			Singapore imports all electricity from Malaysia. Mismatches in demand forecast and supply can cause significant, unnecessary losses to Singaporean businesses and residents. How can we fix this?
-		</h4>
-	</div> -->
-
-</body>
-
+	        <p style="margin:auto; padding-top: 40px;">Courtesy of Group 4 - McKinsey Data Hackathon</p>
+	    </div>
+	</body>
 </template>
-
-<!-- data -->
-<!-- https://data.gov.sg/dataset/surface-air-temperature-mean-daily-maximum -->
-<!-- https://data.gov.sg/dataset/surface-air-temperature-mean-daily-minimum -->
-<!-- https://data.gov.sg/dataset/weather-forecast -->
-
-<!-- d3.js -->
-<!-- http://dataaddict.fr/prenoms/ -->
