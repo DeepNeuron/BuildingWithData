@@ -46,7 +46,7 @@ hr {
 }
 #simpagetomorrow, #simpagetoday, #simpagehistory {
 	color: #FCFCFC;
-	margin: 0 0 0 0;
+	margin: 20px 0 0 50px;
 	padding-left: 20px;
 	font-family: "Source Sans Pro";
 	background-color: #3F3F3F;
@@ -72,4 +72,11 @@ hr {
 }
 #largeo, #larget {
 	font-size: 350%;
+}
+
+#maxmin {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
 }
