@@ -1,4 +1,7 @@
 /* CSS declarations go here */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
 	margin: 0;
 	padding: 0;
@@ -6,6 +9,8 @@ body {
 .carousel{
     overflow:hidden;
     width:100%;
+    order: 1;
+    align-self: flex-start;
 }
 .carousel img{
     display:block;
@@ -41,9 +46,9 @@ body {
     position:relative;
     width:400%; /* Number of panes * 100% */
     overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
-    -moz-animation:carousel 20s infinite;
-    -webkit-animation:carousel 20s infinite;
-    animation:carousel 20s infinite;
+    -moz-animation: carousel 20s infinite;
+    -webkit-animation: carousel 20s infinite;
+    animation: carousel 20s infinite;
     margin:0;
     padding:0;
 }
@@ -59,4 +64,8 @@ body {
 	justify-content: flex-start;
 	align-items: flex-start;
 	align-content: flex-start;
+}
+div #jumbo1 {
+	margin: 0;
+	padding: 0;
 }
